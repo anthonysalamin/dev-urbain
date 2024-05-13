@@ -22,7 +22,7 @@
   {%- assign collection = collections.highlight | sort: "f_order" | limit: 4 -%}<div class="highlight-cl-wrapper w-dyn-list">
     {%- unless collection.length == 0 -%}<div role="list" class="highlight-cl-list w-dyn-items">
       {%- for item in collection -%}<div role="listitem" class="highlight-cl-item w-dyn-item">
-        <a href="{{ links.23 }}" class="highlight-lightbox-link w-inline-block w-lightbox"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;81vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;44vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;40vw&quot;}]" src="{{ item.data.f_transparent-png.url }}" class="img">
+        <a href="{{ links.23 }}" class="highlight-lightbox-link w-inline-block w-lightbox"><img alt="{{ images.0.alt | escape }}" src="{{ item.data.f_transparent-png.url }}" loading="eager" class="img">
           <script type="application/json" class="w-json">{"items":[],"group":"highlight"}</script>
         </a>
       </div>{%- endfor -%}
