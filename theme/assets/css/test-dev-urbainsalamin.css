@@ -557,10 +557,6 @@ ul {
   position: relative;
 }
 
-.highlight-lightbox-link:hover {
-  color: var(--almost-white);
-}
-
 .flex-start-end {
   justify-content: flex-end;
   align-items: flex-start;
