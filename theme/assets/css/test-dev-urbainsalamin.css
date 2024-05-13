@@ -393,6 +393,21 @@ ul {
   position: relative;
 }
 
+.section-2 {
+  width: 100%;
+  height: auto;
+}
+
+.collection-list-wrapper, .collection-list {
+  width: 100%;
+}
+
+.collection-item {
+  width: 33.3333%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (max-width: 991px) {
   h3 {
     font-size: 21px;
