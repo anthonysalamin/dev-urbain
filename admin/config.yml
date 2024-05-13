@@ -87,53 +87,6 @@ collections:
             name: additional_tags
             widget: text
             required: false
-  - name: status
-    label: Statuses
-    folder: cms/status
-    create: true
-    identifier_field: name
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - hint: ''
-        name: title
-        label: Name
-        widget: string
-        required: true
-      - hint: ''
-        name: created-on
-        label: Created On
-        widget: datetime
-        required: false
-      - hint: ''
-        name: updated-on
-        label: Updated On
-        widget: datetime
-        required: false
-      - hint: ''
-        name: published-on
-        label: Published On
-        widget: datetime
-        required: false
-      - hint: ''
-        name: f_color
-        label: color
-        widget: color
-        required: false
-        enableAlpha: true
-        allowInput: true
-      - label: Tags
-        widget: hidden
-        name: tags
-        default: status
-      - label: Layout
-        widget: hidden
-        name: layout
-        default: '[status].html'
-      - label: Publish Date
-        name: date
-        widget: datetime
-      - *ref_0
   - name: highlight
     label: Highlights
     folder: cms/highlight
@@ -163,11 +116,6 @@ collections:
         widget: datetime
         required: false
       - hint: ''
-        name: f_caption
-        label: Caption
-        widget: string
-        required: false
-      - hint: ''
         name: f_transparent-png
         label: image PNG
         widget: object
@@ -184,51 +132,6 @@ collections:
             label: alt
             widget: string
             required: false
-      - hint: ''
-        name: f_image
-        label: image JPG
-        widget: object
-        required: false
-        fields:
-          - hint: ''
-            name: url
-            label: Image
-            widget: image
-            required: false
-            allow_multiple: false
-          - hint: Image Alt
-            name: alt
-            label: alt
-            widget: string
-            required: false
-      - hint: order of appearance in the layout
-        name: f_order
-        label: order
-        widget: number
-        required: false
-      - hint: status of the sculpture, is it sold or to sell ? Choose accordingly
-        name: f_status
-        label: status
-        widget: relation
-        required: true
-        collection: status
-        value_field: cms/status/{{slug}}.md
-        search_fields:
-          - slug
-          - name
-        display_fields:
-          - title
-        multiple: false
-      - hint: ''
-        name: f_hauteur
-        label: hauteur
-        widget: number
-        required: false
-      - hint: ''
-        name: f_largeur
-        label: largeur
-        widget: number
-        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -359,6 +262,19 @@ collections:
             name: title
             widget: hidden
             default: Images
+          - label: Image
+            name: '-5631d287'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
           - label: Image
             name: 645ea6e1
             widget: object

@@ -23,8 +23,8 @@
     {%- assign collection = collections.highlight | limit: 3 | sort: "-created-on" -%}<div class="collection-list-wrapper w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items w-row">
         {%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item w-col w-col-4">
-          <a href="{{ links.23 }}" class="w-inline-block w-lightbox"><img src="{{ images.645ea6e1.url }}" loading="eager" sizes="33vw" alt="{{ images.645ea6e1.alt | escape }}">
-            <script type="application/json" class="w-json">{"items":[{"_id":"6641dea76c75d9b6904dcfcf","origFileName":"urbain-happy.jpg","fileName":"urbain-happy.jpg","fileSize":60557,"height":696,"url":"/assets/images/urbain-happy.jpg","width":930,"type":"image"}],"group":"sculptures"}</script>
+          <a href="{{ links.23 }}" class="w-inline-block w-lightbox"><img src="{{ images.-5631d287.url }}" loading="eager" sizes="(max-width: 2400px) 50vw, 1200px" alt="{{ images.-5631d287.alt | escape }}">
+            <script type="application/json" class="w-json">{"items":[{"_id":"6641dea76c75d9b6904dcfc6","origFileName":"urbain-107.jpg","fileName":"urbain-107.jpg","fileSize":230712,"height":800,"url":"/assets/images/urbain-107.jpg","width":1200,"type":"image"}],"group":"lightbox 2"}</script>
           </a>
         </div>{%- endfor -%}
       </div>{%- endunless -%}
@@ -35,8 +35,8 @@
     {%- assign collection = collections.highlight | limit: 3 | sort: "-created-on" -%}<div class="collection-list-wrapper w-dyn-list">
       {%- unless collection.length == 0 -%}<div role="list" class="collection-list w-dyn-items w-row">
         {%- for item in collection -%}<div role="listitem" class="collection-item w-dyn-item w-col w-col-4">
-          <a href="{{ links.23 }}" class="w-inline-block w-lightbox"><img src="{{ item.data.f_image.url }}" loading="eager" alt="{{ images.645ea6e1.alt | escape }}" class="">
-            <script type="application/json" class="w-json">{"items":[],"group":"sculptures"}</script>
+          <a href="{{ links.23 }}" class="w-inline-block w-lightbox"><img src="{{ item.data.f_transparent-png.url }}" loading="eager" alt="{{ images.645ea6e1.alt | escape }}" class="">
+            <script type="application/json" class="w-json">{"items":[],"group":"lightbox 1"}</script>
           </a>
         </div>{%- endfor -%}
       </div>{%- endunless -%}
