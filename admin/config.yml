@@ -87,57 +87,6 @@ collections:
             name: additional_tags
             widget: text
             required: false
-  - name: faq
-    label: FAQs
-    folder: cms/faq
-    create: true
-    identifier_field: name
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - hint: ''
-        name: title
-        label: Name
-        widget: string
-        required: true
-      - hint: ''
-        name: created-on
-        label: Created On
-        widget: datetime
-        required: false
-      - hint: ''
-        name: updated-on
-        label: Updated On
-        widget: datetime
-        required: false
-      - hint: ''
-        name: published-on
-        label: Published On
-        widget: datetime
-        required: false
-      - label: Answer
-        name: body
-        widget: markdown
-        required: false
-      - hint: >-
-          order at which the question/answer should be displayed, smaller number
-          get shown first
-        name: f_order
-        label: Order
-        widget: number
-        required: false
-      - label: Tags
-        widget: hidden
-        name: tags
-        default: faq
-      - label: Layout
-        widget: hidden
-        name: layout
-        default: '[faq].html'
-      - label: Publish Date
-        name: date
-        widget: datetime
-      - *ref_0
   - name: status
     label: Statuses
     folder: cms/status
@@ -411,7 +360,7 @@ collections:
             widget: hidden
             default: Images
           - label: Image
-            name: '0'
+            name: 645ea6e1
             widget: object
             fields:
               - name: url
@@ -424,7 +373,7 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: 645ea6e1
+            name: '0'
             widget: object
             fields:
               - name: url
